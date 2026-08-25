@@ -1,4 +1,5 @@
 package com.example.demo;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -7,13 +8,6 @@ public class Company {
 
    private IEmployee employee;
    private String name;
-
-   // Constructor based DI
-//   @Autowired
-//   public Company(IEmployee employee) {
-//      this.employee = employee;
-//   }
-
    @Autowired
    public Company(IEmployee employee, String name) {
       this.employee = employee;
@@ -29,5 +23,4 @@ public class Company {
 	   System.out.println(name+": We will ask our Employee to introduce himself.");
       employee.showEmployeeInfo();
    }
-
 }

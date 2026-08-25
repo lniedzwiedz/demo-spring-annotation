@@ -1,6 +1,5 @@
 package com.example.demo;
 
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -20,18 +19,13 @@ public class AppConfig {
 
    @Bean
    public Person getNameP() {
-      return new Person("Mikołaj", "święty");
+      return new Person("Mikołaj", "Śnięty");
    }
 
    @Bean
    public Partner getNamePartner() {
-//      return new Partner();
       Partner p = new Partner();
       p.setParName("Julia");
       return p;
    }
-
-
-
-
 }

@@ -28,5 +28,4 @@ public class Employee implements IEmployee {
          System.out.println("partner name is "+ partner.parName);
       }
    }
-
 }
